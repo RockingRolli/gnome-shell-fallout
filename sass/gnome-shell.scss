@@ -1,0 +1,71 @@
+@import url("/usr/share/gnome-shell/theme/gnome-shell.css");
+
+$main-color: rgba(20, 173, 90, 1);
+$main-color-light: rgba(69, 218, 140, 1);
+
+stage {
+    font-family: Monofont, sans-serif;
+    font-size: 11pt;
+    color: $main-color;
+}
+
+#dash {
+    color: #5f5f5f;
+    font-size: 9pt;
+    padding: 4px 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("bg.jpg");
+    //border: 1px solid rgba(128, 128, 128, 0.4);
+    border: none;
+    border-left: 3px;
+    border-color: $main-color;
+    //border-radius: 0px 9px 9px 0px;
+}
+
+.calendar-month-label {
+    color: $main-color;
+    font-size: 9.5pt;
+    font-weight: bold;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+#panel {
+    background-color: black;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    font-weight: bold;
+    height: 1.86em;
+}
+
+.popup-menu-content {
+    padding: 1em 0em;
+    //background-image: url("drawing.svg");
+}
+
+.panel-button {
+    color: $main-color;
+}
+
+.panel-button:hover {
+    color: $main-color-light;
+}
+
+.system-menu-action {
+    color: $main-color;
+    border-radius: 32px; /* wish we could do 50% */
+    padding: 13px;
+    border: 2px solid $main-color; /* using rgba() is flaky unfortunately */
+}
+
+.system-menu-action:hover,
+.system-menu-action:focus {
+    color: black;
+    background-color: $main-color;
+    border: none;
+    padding: 15px;
+}
+
+.system-menu-action > StIcon {
+    icon-size: 18px;
+}
